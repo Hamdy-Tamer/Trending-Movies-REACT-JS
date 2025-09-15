@@ -1,0 +1,111 @@
+
+.notFoundContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0c0c0c 0%, #2d2d2d 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Film Icon Animation */
+.filmIcon {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  perspective: 1000px;
+}
+
+.filmContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+/* Buttons */
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.homeButton {
+  background: linear-gradient(135deg, #ffd700 0%, #ff6b00 100%);
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.homeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.moviesButton {
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.moviesButton:hover {
+  background-color: #ffd700;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .filmIcon {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .filmContent {
+    font-size: 3rem;
+  }
+  
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .homeButton,
+  .moviesButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}

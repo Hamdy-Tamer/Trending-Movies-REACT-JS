@@ -1,0 +1,54 @@
+.loginContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.authImg {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
+
+.loginTitle {
+  color: #ff9800; 
+  background-color: #ccc;
+  border-radius: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.loginForm {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.input {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+  color: #000;
+  transition: border 0.3s ease;
+}
+
+.input:focus {
+  border: 2px solid orange !important;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.4) !important;
+}
+
+.btn {
+  background: #ff9800;
+  border: none !important;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #e68900;
+  transform: translateY(-3px);
+}

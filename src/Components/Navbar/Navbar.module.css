@@ -1,0 +1,206 @@
+.navbar {
+  background: linear-gradient(135deg, #ff9800 0%, #ff6b00 100%) !important;
+  padding: 0.8rem 0;
+}
+
+.navbarBrand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #fff !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.navbarBrand:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+  border: 2px solid #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.navbarBrand:hover .logo {
+  transform: rotate(10deg);
+}
+
+.brandText {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navMain {
+  gap: 0.5rem;
+}
+
+.navLink {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.8rem 1.2rem !important;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.navLink::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover {
+  color: #2c3e50 !important;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.navLink:hover::before {
+  width: 100%;
+}
+
+.navAuth {
+  gap: 1rem;
+  align-items: center;
+}
+
+.authButton {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  background: #ffffff;
+  color: #ff9800 !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+}
+
+.authButton:hover {
+  background: transparent;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.authButtonSecondary {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+}
+
+.authButtonSecondary:hover {
+  background: #ffffff;
+  color: #ff9800 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  background: transparent;
+  color: #ffffff !important;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+
+.logoutButton:hover {
+  background: #ffffff;
+  color: #e74c3c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+  .navbarBrand {
+    padding: 0.5rem;
+  }
+  
+  .brandText {
+    font-size: 1.2rem;
+  }
+  
+  .navMain {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .navLink {
+    justify-content: center;
+    margin: 0.3rem 0;
+    padding: 1rem !important;
+    color: #2c3e50 !important;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .navLink:hover {
+    background: #2c3e50;
+    color: #ffffff !important;
+  }
+  
+  .navAuth {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem 0;
+  }
+  
+  .authButton,
+  .authButtonSecondary,
+  .logoutButton,
+  .btn {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0.2rem 0;
+  }
+  
+  .navbar-collapse {
+    background: linear-gradient(135deg, #ff9800 0%, #ff6b00 100%);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.navbarBrand:hover {
+  animation: pulse 0.5s ease-in-out;
+}

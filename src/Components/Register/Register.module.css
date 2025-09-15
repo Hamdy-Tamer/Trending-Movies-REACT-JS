@@ -1,0 +1,105 @@
+.registerContainer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.registerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px; 
+}
+
+.title{
+  position: relative;
+}
+
+.title::after{
+  content: "";
+  width: 12%;
+  height: 3px;
+  position: absolute;
+  left: 44%;
+  bottom: -3px;
+  background-color: black;
+}
+
+
+.leftSide {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.authImg {
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  max-height: 550px;
+}
+
+.formBox {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.formTitle {
+  background-color: orange;
+  border-radius: 8px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.label {
+  color: #000;
+  font-weight: 600;
+}
+
+.input {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.input:focus {
+  border: 2px solid orange !important;
+  box-shadow: 0 0 8px rgba(255, 165, 0, 0.4) !important;
+}
+
+.submitBtn {
+  background-color: orange;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background-color: darkorange;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+  .registerContent {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .leftSide,
+  .rightSide {
+    flex: unset;
+    width: 100%;
+  }
+}
