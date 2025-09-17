@@ -46,10 +46,10 @@ export default function Footer() {
             <div className="col-lg-2 col-md-6 mb-4">
               <h6 className={styles.columnTitle}>Navigation</h6>
               <ul className={styles.footerList}>
-                <li><Link to="home" className={styles.footerLink}>Home</Link></li>
-                <li><Link to="about" className={styles.footerLink}>About</Link></li>
-                <li><Link to="movies" className={styles.footerLink}>Movies</Link></li>
-                <li><Link to="tv" className={styles.footerLink}>TV Shows</Link></li>
+                <li><Link to="home" onClick={() => setIsMenuOpen(false)} className={styles.footerLink}>Home</Link></li>
+                <li><Link to="about" onClick={() => setIsMenuOpen(false)} className={styles.footerLink}>About</Link></li>
+                <li><Link to="movies" onClick={() => setIsMenuOpen(false)} className={styles.footerLink}>Movies</Link></li>
+                <li><Link to="tv" onClick={() => setIsMenuOpen(false)} className={styles.footerLink}>TV Shows</Link></li>
               </ul>
             </div>
 
