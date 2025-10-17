@@ -1,12 +1,46 @@
-# React + Vite
+# 🎬 Trending on Screen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive web application for discovering trending movies and TV shows, built with React.js and powered by The Movie Database (TMDB) API.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Core Functionality
 
-## Expanding the ESLint configuration
+- **Trending Content:** Discover daily trending movies and TV shows
+- **Comprehensive Details:** View ratings, release years, genres, and descriptions
+- **Real-time Data:** Powered by TMDB API for up-to-date information
+- **User Authentication:** Secure login/register system with JWT tokens
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🎨 User Experience
+
+- **Responsive Design:** Optimized for desktop, tablet, and mobile devices
+- **Professional UI:** Modern design with orange theme and smooth animations
+- **Interactive Navigation:** Dynamic navbar that adapts to login status
+
+## 🔒 Authentication & Security
+
+- **Protected Routes:** Certain pages require user authentication
+- **JWT Token Management:** Secure user sessions
+- **Dynamic UI:** Interface changes based on login status
+
+## 🚀 Tech Stack
+ 
+## Frontend
+
+**React.js** - Component-based UI library
+**React Router** - Client-side routing
+**React Hot Toast** - User notifications
+**Formik & Yup** - Form handling and validation
+**Axios** - HTTP client for API requests
+
+## Styling
+
+**Bootstrap 5** - Responsive CSS framework
+**CSS Modules** - Scoped styling components
+**Font Awesome** - Icon library
+**Custom CSS** - Professional animations and transitions
+
+## APIs
+
+**The Movie Database (TMDB) API** - Movie and TV show data
+**Custom Backend API** - User authentication
