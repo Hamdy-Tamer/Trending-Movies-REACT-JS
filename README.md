@@ -44,3 +44,25 @@ A modern, responsive web application for discovering trending movies and TV show
 
 - **The Movie Database (TMDB) API** - Movie and TV show data
 - **Custom Backend API** - User authentication
+
+## 🎮 Usage
+
+## For Visitors
+
+- **Browse Public Content:** View trending movies and TV shows on the home page
+- **Register:** Create a new account to access full features
+- **Login:** Access your personalized dashboard
+
+## For Authenticated Users
+
+- **Full Navigation:** Access all sections (Home, About, Movies, TV)
+- **Detailed Views:** See comprehensive information about each title
+- **Personalized Experience:** Enjoy the full feature set
+
+## Pages Overview
+
+- **Home:** Dashboard with trending movies and TV shows
+- **Movies:** Dedicated page for trending movies with detailed information
+- **TV Shows:** Dedicated page for trending TV series
+- **About:** Information about the platform and team
+- **Login/Register:** Authentication pages
