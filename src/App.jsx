@@ -37,7 +37,8 @@ export default function App() {
         { path: "about", element: <About /> },
         { path: "movies", element: <Movies /> },
         { path: "tv", element: <TV /> },
-        { index: true, element: <Login saveLoginData={saveLoginData} /> }, 
+        { index: true, element: <Login saveLoginData={saveLoginData} /> },
+        { path: "login", element: <Login saveLoginData={saveLoginData} /> },
         { path: "register", element: <Register /> },
         { path: "*", element: <NotFound /> },
       ]
