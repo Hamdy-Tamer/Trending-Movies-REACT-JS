@@ -13,14 +13,34 @@ export default function Navbar({logindata, setLoginData}) {
     navigate("/");
   }
 
+  // Function to handle brand click
+  function handleBrandClick(e) {
+    if (!logindata) {
+      e.preventDefault(); // Prevent navigation if not logged in
+      // Optional: Show a message or redirect to login
+      navigate("/");
+    }
+    // If logged in, allow normal navigation to /home
+  }
+
   return (
     <>
         <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
             <div className="container-fluid">
-                <Link className={`navbar-brand ${styles.navbarBrand}`} to="/home">
+                {/* Conditional brand link */}
+                {logindata ? (
+                  // Logged in - link to home page
+                  <Link className={`navbar-brand ${styles.navbarBrand}`} to="/home">
                     <img src={img} alt="Logo" className={styles.logo}/>
                     <span className={styles.brandText}>Trending on Screen</span>
-                </Link>
+                  </Link>
+                ) : (
+                  // Not logged in - non-clickable brand or link to login
+                  <span className={`navbar-brand ${styles.navbarBrand} ${styles.disabledBrand}`}>
+                    <img src={img} alt="Logo" className={styles.logo}/>
+                    <span className={styles.brandText}>Trending on Screen</span>
+                  </span>
+                )}
                 
                 <button className={`navbar-toggler ${styles.toggler}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -40,7 +60,7 @@ export default function Navbar({logindata, setLoginData}) {
                <li className="nav-item"><button onClick={Logout} className={styles.logoutButton}><i className="fas fa-sign-out-alt me-2"></i>Logout</button></li>
                ) : (
                 <>
-                  <li className="nav-item">   <Link className={styles.authButton} to=""><i className="fas fa-sign-in-alt me-2"></i>Login</Link></li>
+                  <li className="nav-item"><Link className={styles.authButton} to=""><i className="fas fa-sign-in-alt me-2"></i>Login</Link></li>
                   <li className="nav-item"><Link className={styles.authButtonSecondary} to="register"><i className="fas fa-user-plus me-2"></i>Register</Link></li>
               </>
                )}                    
