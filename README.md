@@ -27,20 +27,20 @@ A modern, responsive web application for discovering trending movies and TV show
  
 ## Frontend
 
-**React.js** - Component-based UI library
-**React Router** - Client-side routing
-**React Hot Toast** - User notifications
-**Formik & Yup** - Form handling and validation
-**Axios** - HTTP client for API requests
+- **React.js** - Component-based UI library
+- **React Router** - Client-side routing
+- **React Hot Toast** - User notifications
+- **Formik & Yup** - Form handling and validation
+- **Axios** - HTTP client for API requests
 
 ## Styling
 
-**Bootstrap 5** - Responsive CSS framework
-**CSS Modules** - Scoped styling components
-**Font Awesome** - Icon library
-**Custom CSS** - Professional animations and transitions
+- **Bootstrap 5** - Responsive CSS framework
+- **CSS Modules** - Scoped styling components
+- **Font Awesome** - Icon library
+- **Custom CSS** - Professional animations and transitions
 
 ## APIs
 
-**The Movie Database (TMDB) API** - Movie and TV show data
-**Custom Backend API** - User authentication
+- **The Movie Database (TMDB) API** - Movie and TV show data
+- **Custom Backend API** - User authentication
