@@ -17,7 +17,7 @@ export default function Navbar({logindata, setLoginData}) {
     <>
         <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
             <div className="container-fluid">
-                <Link className={`navbar-brand ${styles.navbarBrand}`} to="/">
+                <Link className={`navbar-brand ${styles.navbarBrand}`} to="/home">
                     <img src={img} alt="Logo" className={styles.logo}/>
                     <span className={styles.brandText}>Trending on Screen</span>
                 </Link>
